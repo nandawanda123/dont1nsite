@@ -493,6 +493,26 @@
       }
       
     </style>
+    <style>
+      .n-columns-6 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      @media only screen and (max-width: 768px) {
+        .n-columns-m-3 {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .n-columns-gap {
+        grid-gap: min(max(8px, 2vmin), 20px);
+      }
+
+      .n-slots {
+        border-radius: 15px;
+      }
+    </style>
   </head>
   <body>
     <header id="topHeader">
